@@ -90,6 +90,95 @@ body {
     text-align: center;
 }
 
+/* ------------------ TEENUSED -------------------------- */
+
+/* Teenuste sektsioon */
+.services {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services h1 {
+    color: #2b6777;
+    margin-bottom: 30px;
+}
+
+.service-card {
+    background-color: #f0f4f8;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-card h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 15px 0;
+}
+
+.service-card p {
+    font-size: 1em;
+    color: #666;
+    padding: 0 15px 15px;
+}
+
+.btn {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 10px 20px;
+    background-color: #2b6777;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #a7d4cf;
+}
+
+
+/* -------------- TEENUSED ERALDI LEHTED */
+
+/* Paigutus väiksematel ekraanidel */
+@media (max-width: 768px) {
+    .service-card {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Footer */
 .footer {
