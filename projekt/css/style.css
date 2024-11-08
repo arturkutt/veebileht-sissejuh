@@ -99,3 +99,40 @@ body {
     padding: 20px;
     margin-top: 20px;
 }
+
+.main-sentence {
+    font-size: 4em;
+    font-weight: bold;
+    color: #2b6777;
+}
+
+.highlight {
+    color: white;
+}
+
+.meist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 2px;
+    background-color: lightblue;
+}
+
+.description {
+    margin-top: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.main-info {
+    max-width: 45%;
+}
+
+.about-section {
+    max-width: 45%;
+}
+
+.footer-meist {
+    margin-top: 0px;
+}
