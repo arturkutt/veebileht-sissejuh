@@ -157,28 +157,68 @@ body {
 
 /* -------------- TEENUSED ERALDI LEHTED */
 
+.service-card {
+    text-align: center;
+}
+
+.service-card h2 {
+    height: 77px;
+    display: flex;
+    align-items: center; /* Vertikaalne tsentreerimine */
+    justify-content: center; /* Horisontaalne tsentreerimine (kui vajalik) */
+    text-align: center;
+}
+
+.service-card p {
+    height: 92px;
+    display: flex;
+    align-items: center; /* Vertikaalne tsentreerimine */
+    justify-content: center; /* Horisontaalne tsentreerimine (kui vajalik) */
+    text-align: center;
+}
+
 /* Paigutus väiksematel ekraanidel */
 @media (max-width: 768px) {
     .service-card {
         width: 100%;
         margin: 20px 0;
     }
+
+    .service-card h2 {
+        height: 40px;
+    }
+
+    .service-card p {
+        height: 100%;
+    }
 }
 
+@media (max-width: 600px) {
+    .map-container iframe {
+        width: 100%;
+    }
+}
 
+@media (max-width: 745px) {
+    section.meist {
+        display: flex;
+        flex-direction: column;
+    }
 
+    div.main-info {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+    }
 
+    div.main-info p.description {
+        padding: 2% 5%;
+    }
 
-
-
-
-
-
-
-
-
-
-
+    section.meist div.about-section {
+        max-width: 100%;
+    }
+}
 
 /* Footer */
 .footer {
@@ -224,9 +264,9 @@ body {
 
 .about-section {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    gap: 20px; 
+    gap: 20px;
     max-width: 45%;
     width: 100%;
     padding: 20px;
@@ -240,8 +280,8 @@ body {
 
 .image-box img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; 
+    height: 85%;
+    object-fit: cover;
     border-radius: 8px;
 }
 
