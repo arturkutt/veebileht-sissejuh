@@ -239,6 +239,7 @@ p {
 
 /* -------------- TEENUSED ERALDI LEHTED */
 
+<<<<<<< HEAD
 .service-info {
     flex: 1
 }
@@ -252,6 +253,26 @@ p {
     margin: 20px;
     font-size: 1.3em;
     color: #484850;
+=======
+.service-card {
+    text-align: center;
+}
+
+.service-card h2 {
+    height: 77px;
+    display: flex;
+    align-items: center; /* Vertikaalne tsentreerimine */
+    justify-content: center; /* Horisontaalne tsentreerimine (kui vajalik) */
+    text-align: center;
+}
+
+.service-card p {
+    height: 92px;
+    display: flex;
+    align-items: center; /* Vertikaalne tsentreerimine */
+    justify-content: center; /* Horisontaalne tsentreerimine (kui vajalik) */
+    text-align: center;
+>>>>>>> d2deaa145feddbb9566b26a53cdb8c947dc37af9
 }
 
 /* Paigutus väiksematel ekraanidel */
@@ -260,22 +281,42 @@ p {
         width: 100%;
         margin: 20px 0;
     }
+
+    .service-card h2 {
+        height: 40px;
+    }
+
+    .service-card p {
+        height: 100%;
+    }
 }
 
+@media (max-width: 600px) {
+    .map-container iframe {
+        width: 100%;
+    }
+}
 
+@media (max-width: 745px) {
+    section.meist {
+        display: flex;
+        flex-direction: column;
+    }
 
+    div.main-info {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+    }
 
+    div.main-info p.description {
+        padding: 2% 5%;
+    }
 
-
-
-
-
-
-
-
-
-
-
+    section.meist div.about-section {
+        max-width: 100%;
+    }
+}
 
 /* Footer */
 .footer {
@@ -288,6 +329,67 @@ p {
 }
 
 
+<<<<<<< HEAD
 .footer p {
     color: #fff;
+=======
+.highlight {
+    color: white;
+}
+
+.meist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 2px;
+    background-color: lightblue;
+}
+
+.description {
+    margin-top: 20px;
+    font-size: 1.3em;
+    color: #484850;
+}
+
+.main-info {
+    max-width: 45%;
+}
+
+.footer-meist {
+    margin-top: 0px;
+}
+
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    max-width: 45%;
+    width: 100%;
+    padding: 20px;
+    row-gap: 40px;
+}
+
+.text-box h2 {
+    color: #2b6777;
+    font-size: 1.5em;
+}
+
+.image-box img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.about-section .description {
+    font-size: 1em;
+}
+
+.name {
+    font-size: 0.9em;
+    text-align: left;
+    color: #484850;
+>>>>>>> d2deaa145feddbb9566b26a53cdb8c947dc37af9
 }
