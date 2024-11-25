@@ -22,29 +22,63 @@ p {
 /* Navigeerimisriba stiil */
 .navbar {
     background-color: #2b6777;
-    padding: 15px;
+    padding: 8px 15px;
+    overflow: visible;
+    display: flex;
+    align-items: center;
 }
 
 .nav-list {
     display: flex;
     justify-content: center;
+    align-items: center;
     list-style-type: none;
+    position: relative;
+    width: 100%;
+    margin: 0;
 }
 
 .nav-list li {
     margin: 0 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .nav-list a {
     text-decoration: none;
     color: #fff;
     font-size: 1.2em;
-    transition: color 0.3s;
-    display: inline-block
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.nav-list a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #a7d4cf;
+    transition: all 0.3s ease;
+    z-index: -1;
+    border-radius: 50px;
 }
 
 .nav-list a:hover {
-    color: #a7d4cf;
+    color: #2b6777;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-list a:hover::before {
+    width: 100%;
 }
 
 /* Esimene osa - Hero sektsioon */
