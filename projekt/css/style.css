@@ -26,16 +26,31 @@ p {
     overflow: visible;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo img {
+    height: 40px;
+    width: auto;
+}
+
+.nav-logo .favicon {
+    height: 80px;
+    margin-right: 10px;
 }
 
 .nav-list {
     display: flex;
-    justify-content: center;
     align-items: center;
     list-style-type: none;
-    position: relative;
-    width: 100%;
     margin: 0;
+    padding: 0;
 }
 
 .nav-list li {
@@ -43,6 +58,8 @@ p {
     position: relative;
     display: flex;
     align-items: center;
+    background-color: #22758f;
+    border-radius: 10px;
 }
 
 .nav-list a {
@@ -125,7 +142,7 @@ p {
 .btn {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #2b6777;
+    background-color: #22758f;
     color: #fff;
     text-decoration: none;
     border-radius: 50px;
@@ -731,5 +748,34 @@ p {
     .service-info p {
         font-size: 1.1em;
         padding: 15px;
+    }
+}
+
+.service-card a.card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.service-card .btn {
+    position: relative;
+    z-index: 2;
+}
+
+/* Add responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 8px 10px;
+    }
+    
+    .nav-logo img {
+        height: 30px;
+    }
+    
+    .nav-logo .favicon {
+        height: 25px;
     }
 }
