@@ -204,28 +204,7 @@
         <p>Kontaktandmed ja muu oluline info. E-post: nimi@gmail.com, Telefon: +372 123 4567</p>
     </footer>
 
-    <script>
-        const hero = document.getElementById('esileht');
-
-        const images = [
-            "url('img/esileht.png')",
-            "url('img/teenus10.png')",
-            "url('img/teenus11.png')"
-        ];
-
-        let currentImageIndex = 0;
-
-        function changeBGImage() {
-            currentImageIndex = (currentImageIndex + 1) % images.length; // Loop through images
-            hero.style.backgroundImage = images[currentImageIndex]; // Set the new background image
-        }
-
-        // Set the initial background image
-        hero.style.backgroundImage = images[currentImageIndex];
-
-        // Change the background image every 3 seconds
-        setInterval(changeBGImage, 3000);
-    </script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>
